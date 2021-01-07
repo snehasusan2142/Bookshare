@@ -1,0 +1,38 @@
+mat-sidenav-container{
+    height:100%;
+}
+mat-sidenav, mat-sidenav-content{
+    padding: 5px;
+    
+}
+mat-sidenav{
+    width:230px;
+    background-color: #42bd88;
+}
+h1{
+    text-align: center;
+}
+.intend{
+    padding-left:1.2em;
+    font-size: 0.8em;
+    margin-top: 1.3em;
+    
+}
+a{
+    color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  padding:0.3em;
+  margin-top: 0.5em;
+  text-decoration: none;
+  transition:.2s; /* Animation */
+}
+a:hover{
+   font-size: 2em;
+    background-color: rgb(235, 232, 55);
+    color:#015249;
+}
+
+.but1{
+    background-color: rgba(240, 227, 49, 0.911);
+    position: relative;
+}

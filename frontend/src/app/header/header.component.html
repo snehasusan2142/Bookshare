@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+       
+      <a class="navbar-brand" routerLink="/"> <img src="../../assets/images/library.png" alt="" width="170" height="160" class="d-inline-block align-top">       <a class="navbar-brand " href="#"><h1 class="fs-1 head text-align-left text-warning">BOOKSHARE</h1></a>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">  </span>
+             </button>
+        <ul class="nav navbar-nav navbar-right">
+            <li><button  class="btn btn-outline-warning" routerLink="signup" *ngIf="!auth.loggedin()"> Sign Up</button></li> &nbsp; &nbsp;
+            <li><button  class="btn btn-outline-warning" routerLink="login" *ngIf="!auth.loggedin()" routerLinkActive="active">Login</button></li> &nbsp; &nbsp;
+            <li><button  class="btn btn-outline-warning" routerLink="/" (click)="logout()"  *ngIf="auth.loggedin()">LogOut</button></li>
+
+          </ul>
+      </div>
+    
+  </nav>

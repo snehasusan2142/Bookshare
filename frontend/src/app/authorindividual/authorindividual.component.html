@@ -1,0 +1,62 @@
+<div>
+    <h1> &nbsp; Books</h1><hr>
+</div>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body" >
+              <div>
+            
+            
+            
+            <!--/stories-->
+            <div class="row" >    
+              <br>
+              <div class="col-md-2 col-sm-3 text-center">
+                <a class="story-title" href="#"><img alt="" src="../../assets/images/authors/{{auth.img}}" style="width:100px;height:100px" class="img-circle"></a>
+              </div>
+              <div class="col-md-10 col-sm-9">
+                <h2>{{auth.name}}</h2>
+                <div class="row">
+                  <div class="col-xs-9">
+                    <h4><span class="label label-default">{{auth.book}}</span></h4><h4>
+                    <small style="font-family:courier,'new courier';" class="text-muted">{{auth.genre}}  </small>
+                    </h4></div>
+                  <div class="col-xs-3">
+                   
+                  </div>
+                  <!-- id:{{id}} -->
+                </div>
+                <button  class="btn btn-warning btnNext" routerLink="/author/update/{{id}}" (click)="doupdate()"  *ngIf="_auth.loggedin1()">Update Book</button>
+                <button class="btn btn-danger btnNext" (click)="dodelete()"  *ngIf="_auth.loggedin1()" >Delete Book</button>
+        
+              </div>
+              <hr>
+            
+        
+            
+     
+            <!--/stories-->
+            
+            
+           
+            
+          </div>
+          <hr>
+        </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+         
+         <button routerLink="/books" class="btn btn-primary pull-right btnNext">Back</button> &nbsp;&nbsp;
+
+         <button routerLink="/" class="btn btn-primary pull-right btnNext">Home</button>       <br>                                                               
+
+    </div>
+
+  </div>

@@ -1,0 +1,55 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>Add Book</h1>
+       <form method="POST" (ngSubmit)="Addbook()"   enctype="multipart/form-data" (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <h1 style="text-align: center;">Add  Book  </h1>
+    
+        <div class="form-group">
+          
+          <label for="Book">Book Name</label>
+          <input type="text" class="form-control" name="Book" id="Book" placeholder="Book Name" required [(ngModel)]="newbook.title"  #Book="ngModel" >
+          <div [hidden]="Book.valid || Book.pristine"
+          class="alert alert-danger">
+       Book title is required
+     </div>
+        </div>
+        <div class="form-group">
+          
+            <label for="Author">Author Name</label>
+            <input type="text" class="form-control" name="Author" id="Author "placeholder="Author Name" required [(ngModel)]="newbook.author" #Author="ngModel" >
+          </div>
+          <div [hidden]="Author.valid || Author.pristine"
+          class="alert alert-danger">
+       Author Name is required
+     </div>
+          <div class="form-group">
+          
+              <label for="Genre">Genre</label>
+              <input type="text" class="form-control" name="Genre" id="Genre" placeholder="Genre" required  [(ngModel)]="newbook.genre" #Genre="ngModel">
+              <div [hidden]="Genre.valid || Genre.pristine"
+              class="alert alert-danger">
+           Name is required
+         </div>
+            </div>
+            <!-- Image Preview -->
+     
+       
+          <div class="form-group">
+            <label for="Image">Upload Book Image</label>
+             
+          <input type="file" name="Image" class="form-control-file" id="Image" required  [(ngModel)]="newbook.img" #Image="ngModel" >
+          <img id="img2" src="#"/>
+          <div [hidden]="Image.valid || Image.pristine"
+          class="alert alert-danger">
+       Image is required
+     </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-success formbut"  [disabled]="!heroForm.form.valid" value="Submit">
+            &nbsp;&nbsp;<button type="button" class="btn btn-outline-danger" (click)="newHero(); heroForm.reset()">Reset</button>
+
+          </div>
+      </form>
+        
+</div>
+    </div>

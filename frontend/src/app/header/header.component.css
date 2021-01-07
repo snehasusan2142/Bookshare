@@ -1,0 +1,12 @@
+/* @import "~bootstrap/dist/css/bootstrap.min.css" */
+h1{
+    font-size: 4em;
+    padding-top: 0.7em;
+    
+}
+.btn{
+    font-size: 1.1em;
+}
+.navbar{
+    background-color: #015249;
+}

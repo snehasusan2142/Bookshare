@@ -1,0 +1,50 @@
+.join{
+    text-decoration: none;
+    color: floralwhite;
+    text-align: center;
+    /* border-radius: 50%; */
+    margin:0.3em;
+    padding:0.3em;
+  transition: 0.3s;
+
+}
+.join:hover{
+    text-shadow: grey;
+    font-size: 1.3em;
+    background-color:rgb(184, 184, 240);
+
+}
+.card{
+    text-align: center;
+    font-size: xx-large;
+    height:auto;
+    margin: 1.3em;
+}
+.jumbotron{
+    background-image: url('https://wallpaperaccess.com/full/1155050.jpg');
+    /* height: 10em; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display-3{
+    color: green;
+    font-size: 4em;
+    margin-left: 1em;
+    /* text-align: center; */
+}
+.container{
+    background-image: url("https://ncte.org/wp-content/uploads/2019/01/grief-books-blog-title.png");
+height: 30em;
+width: 75em;
+/* background-repeat: no-repeat; */
+background-size: cover;
+margin: 1em;
+}
+.container2{
+    background-image: url("https://www.barnesandnoble.com/blog/barnesy/wp-content/nas-uploads/2017/10/bookshelf-632x362.jpeg");
+height: 40em;
+width:75em;
+/* background-repeat: no-repeat; */
+background-size: cover;
+margin: 1em;
+}
